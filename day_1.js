@@ -52,6 +52,24 @@ function removeDuplicates(params) {
     
 }
 
-console.log('removeDuplicates', removeDuplicates([1, 2, 2, 3, 4, 4, 5]))
+
+/*
+Q) Program to find Reverse of a string without using built-in method ?
+
+*/
+
+function reverseOfString(str) {
+    let result = []
+    for(let i = str.length-1;  i>= 0;  i--) { 
+        result.push(str[i]);
+    }
+    
+    return result.join('')
+    
+    }
+    
+    console.log('reverseOfString', reverseOfString('qwerty'))
+
+    
     
     
