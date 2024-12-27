@@ -42,5 +42,16 @@ function isPalindrome2(params) {
         })
         
     }
+/*
+Q) To remove duplicate values.
+
+*/
+
+function removeDuplicates(params) {
+    return Array.from(new Set(params)); 
+    
+}
+
+console.log('removeDuplicates', removeDuplicates([1, 2, 2, 3, 4, 4, 5]))
     
     
