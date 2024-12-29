@@ -72,4 +72,31 @@ function reverseOfString(str) {
 
     
     
-    
+    /*
+Q) Find the max count of consecutive 1’s in an array ?
+
+*/
+
+function maxCountArrayList(ary) { 
+
+    let root_counter = []; 
+    let counter = 0; 
+    ary.forEach((item, index) =>  {
+
+    if(item  === 1) {
+        counter = counter + 1; 
+        if(index ===ary.length - 1 ){ 
+            root_counter.push(counter)
+        }
+    } else{ 
+        if(counter > 0) root_counter.push(counter);
+        counter = 0; 
+    }
+    });  
+
+    console.log(root_counter)
+    return root_counter.sort((a,b) =>  b-a)[0]
+}
+
+
+console.log('==> ', maxCountArrayList([1,1,1,1,0,0,0,1,1,1,1,1,1]))
