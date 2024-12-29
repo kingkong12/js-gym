@@ -209,3 +209,24 @@ console.log('==> ',oddNo( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 
 
+
+/*
+ Write a JavaScript program to find the largest element in a nested array.
+ [[3, 4, 58], [709, 8, 9, [10, 11]], [111, 2]]
+*/
+
+function fibonacci(count) {
+    const result = [0,1]; 
+    if(count === 0) return result.slice(0,1);
+    if(count === 1) return result; 
+    for(i = 2; i < count; i++ ) {
+        result.push(result[i-2] + result[i-1]); 
+    }
+    return result
+    }
+    
+    
+    console.log('==> ',fibonacci(8))
+
+
+    
