@@ -100,3 +100,22 @@ function maxCountArrayList(ary) {
 
 
 console.log('==> ', maxCountArrayList([1,1,1,1,0,0,0,1,1,1,1,1,1]))
+
+
+
+/*
+Q) Find the factorial of given number ?
+
+
+we wil use recurssion 
+*/
+
+function findFactorial(no) {
+    if(no === 1 ){ 
+    return no
+    }
+    return no  * findFactorial(no-1)
+}
+
+
+console.log('==> ',findFactorial(5))
