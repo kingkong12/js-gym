@@ -119,3 +119,35 @@ function findFactorial(no) {
 
 
 console.log('==> ',findFactorial(5))
+
+
+/*
+Given 2 arrays that are sorted [0,3,4,31] and [4,6,30]. Merge them and sort [0,3,4,4,6,30,31]
+1. using  build in methods.  
+2. without built in methods. 
+*/
+
+function mergeSortedArrays(ary1, ary2) {
+    return [...ary1, ...ary2].sort((a,b) => a-b)
+}
+
+
+console.log('==> ',mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
+
+
+/*
+Create a function which will accepts two arrays arr1 and arr2.
+ The function should return true if every value in arr1 has its corresponding value squared in array2. The frequency of values must be same.
+
+*/
+
+function squareValueOFarray(ary1, ary2) {
+    return ary1.every((item,index) => { 
+        return ary2[index] === item *item
+    })
+}
+
+
+console.log('==> ',squareValueOFarray([2, 3, 3], [4, 9, 9]));
+
+
