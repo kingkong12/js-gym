@@ -173,3 +173,24 @@ console.log('==> ',squareValueOFarray('listen','silent'));
 
 
 
+/*
+10. Write logic to get unique objects from below array ?
+ I/P: [{name: "sai"},{name:"Nang"},{name: "sai"},{name:"Nang"},{name: "111111"}];
+ O/P: [{name: "sai"},{name:"Nang"}{name: "111111"}
+
+*/
+
+function uniqueObject(obj) {
+
+    // solution -1  
+    return Array.from(new Set(obj.map(item =>  item.name))).map(item => {
+        return {name:item}
+    })
+
+    
+}
+
+
+console.log('==> ',uniqueObject([{name: "sai"},{name:"Nang"},{name: "sai"},{name:"Nang"},{name: "111111"}]))
+
+
