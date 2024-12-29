@@ -229,4 +229,23 @@ function fibonacci(count) {
     console.log('==> ',fibonacci(8))
 
 
+
+    /*
+ Given a string, write a javascript function to count the occurrences of each character in the string.
+*/
+
+function occurrences(str) {
+    let result = {}; 
+    str.split('').forEach((item,index) => { 
+       const counter =  result[item] ?? 0
+       result = {...result , [item]:  counter + 1 }
+    })
+    
+    return result
+    
+   }
+   
+   
+   console.log('==> ',occurrences('hello world'))
+
     
