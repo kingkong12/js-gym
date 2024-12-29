@@ -151,3 +151,25 @@ function squareValueOFarray(ary1, ary2) {
 console.log('==> ',squareValueOFarray([2, 3, 3], [4, 9, 9]));
 
 
+/*
+Q) Given two strings. Find if one string can be formed by rearranging the letters of other string.
+*/
+
+function squareValueOFarray(str1, shuffledstr) {
+    let str2 = Array.from(shuffledstr);
+    return Array.from(str1).every((char, index) =>  {
+    if(str2.includes(char)) { 
+        const findIndex = str2.indexOf(char); 
+        str2 = [...str2.slice(0,findIndex), ...str2.slice(findIndex+1)]; 
+        return true
+    }
+    return false
+    })
+}
+
+
+console.log('==> ',squareValueOFarray('listen','silent'));
+
+
+
+
