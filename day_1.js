@@ -194,3 +194,18 @@ function uniqueObject(obj) {
 console.log('==> ',uniqueObject([{name: "sai"},{name:"Nang"},{name: "sai"},{name:"Nang"},{name: "111111"}]))
 
 
+/*
+- Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
+*/
+
+function oddNo(ary) {
+
+    return ary.filter(item =>  item % 2 != 1); 
+  
+}
+
+
+console.log('==> ',oddNo( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+
