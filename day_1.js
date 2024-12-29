@@ -249,3 +249,26 @@ function occurrences(str) {
    console.log('==> ',occurrences('hello world'))
 
     
+
+
+   /*
+Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method.
+
+Example Dataset:
+Input: "The quick brown fox jumps"
+Output: "jumps fox brown quick The"
+
+Input: "Hello world!"
+Output: "world! Hello"
+
+*/
+
+function reverseWord(str) {
+
+    return str.split(' ').reverse().join(' '); 
+   }
+   
+   
+   console.log('==> ',reverseWord('The quick brown fox jumps'))
+
+   
